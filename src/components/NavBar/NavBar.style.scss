@@ -1,0 +1,42 @@
+.NavBar {
+    &-Wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.625rem 1rem;
+        font-size: 1rem;
+        
+        &_style {
+            &_primary {
+                gap: 1.75rem;
+                background: var(--color-white);
+                color: var(--color-darkest-gray);
+                border-radius: 0.25rem;
+            }
+
+            &_secondary {
+                gap: 3rem;
+                background: var(--color-primary-base);
+                color: var(--color-white);
+            }
+        }
+    }
+
+    &-Link {
+        border-radius: 0.125rem;
+        padding: 0.5rem 0.75rem;
+
+        &_active {
+            &_primary {
+                background: var(--color-primary-base);
+                color: var(--color-white);
+            }
+
+            &_secondary {
+                background: var(--color-white);
+                color: var(--color-primary-base);
+            }
+        }
+    }
+}

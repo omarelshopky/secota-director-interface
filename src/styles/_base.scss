@@ -34,6 +34,11 @@ span {
     cursor: default;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #app {
     position: relative;
     z-index: 1;

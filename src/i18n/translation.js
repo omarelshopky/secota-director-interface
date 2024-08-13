@@ -75,7 +75,17 @@ const translation = {
         }
 
         return nextTick()
-    }
+    },
+
+    route(to) {
+        return {
+          ...to,
+          params: {
+            locale: translation.currentLocale,
+            ...to.params
+          }
+        }
+      }
 }
 
 export default translation

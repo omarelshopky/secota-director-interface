@@ -59,7 +59,7 @@ import AppLogo from '../AppLogo/AppLogo.vue'
                 <ColorfulCircle color="primary" location="topRight" />
                 <h1 :class="bem({ element: 'Title' })">
                     {{ $t('framework.name') }}
-                    <AppLogo />
+                    <AppLogo :class="bem({ element: 'Logo' })" />
                 </h1>
                 <h2 :class="bem({ element: 'SubTitle' })">
                     {{ $t('framework.title') }}
