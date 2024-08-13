@@ -1,0 +1,18 @@
+{
+    "locale": {
+        "en": "English"
+    },
+    "navbar": {
+        "main": {
+            "dashboard": "Dashboard",
+            "devices": "Devices",
+            "sw-updates": "Software Updates",
+            "campaigns": "Campaigns"
+        }
+    },
+    "framework": {
+        "name": "SecOTA",
+        "title": "Universal Secure Flash Over-The-Air Framework",
+        "subtitle": "for Embedded and IoT Systems"
+    }
+}
