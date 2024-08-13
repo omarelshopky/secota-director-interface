@@ -1,7 +1,7 @@
 <script setup>
 import ColorfulCircle from 'components/ColorfulCircle/ColorfulCircle.vue'
 import ScrollDown from 'components/ScrollDown/ScrollDown.vue'
-import AppLogo from '../AppLogo/AppLogo.vue';
+import AppLogo from '../AppLogo/AppLogo.vue'
 </script>
 
 <template>

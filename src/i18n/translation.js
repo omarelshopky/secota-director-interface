@@ -25,7 +25,7 @@ const translation = {
         document.querySelector('meta[property="og:locale"]').setAttribute('content', locale)
         document
             .querySelector('link[rel="canonical"]')
-            .setAttribute('href', 'https://omarelshopky.github.com/' + locale)
+            .setAttribute('href', import.meta.env.BASE_URL + locale)
     },
 
     isLocaleSupported(locale) {
