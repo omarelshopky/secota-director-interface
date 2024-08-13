@@ -1,0 +1,66 @@
+:root {
+    --lang-selector-animation-duration: 1.5s;
+    --lang-selector-animation-delay: 0s;
+}
+
+.LanguageSelector {
+    &-Wrapper {
+        border-top: 0.8px solid rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+    }
+
+    &-Content {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3.9375rem 1rem;
+        gap: 2.5rem;
+    }
+
+    &-LanguagesContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        opacity: 0;
+
+        @include tablet-and-mobile {
+            gap: 1.5rem;
+        }
+
+        &_inView {
+            animation: go-up var(--lang-selector-animation-duration) forwards ease-out
+                var(--lang-selector-animation-delay) 1 normal;
+        }
+    }
+}
+
+@keyframes drop-down {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes go-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
